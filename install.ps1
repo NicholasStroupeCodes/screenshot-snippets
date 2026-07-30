@@ -67,7 +67,8 @@ $escapedDir = $OutputDir -replace '"', '""'
 $vbsContent = $vbsTemplate -f $escapedPs1, $escapedDir
 $vbsContent = $vbsContent.TrimEnd()
 
-$vbsContent | Out-File -FilePath $vbsDest -Encoding utf8 -NoNewline -Force
+# VBS is interpreted by the legacy Windows Script Host, which expects ANSI/ASCII.
+$vbsContent | Out-File -FilePath $vbsDest -Encoding Default -NoNewline -Force
 
 # Create or replace the startup shortcut
 if (Test-Path $shortcutPath) {
