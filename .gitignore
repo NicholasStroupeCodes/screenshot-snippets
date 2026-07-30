@@ -1,0 +1,20 @@
+# Environment / secrets
+.env
+.env.local
+
+# PowerShell logs and temp files
+*.log
+clip-*.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Installer output (copied to user's profile at runtime, not committed)
+.screenshot-snippets/

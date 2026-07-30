@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#313244"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#89b4fa"/>
+      <stop offset="100%" stop-color="#b4befe"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="320" rx="16" fill="url(#bg)"/>
+  
+  <!-- Window controls -->
+  <circle cx="50" cy="42" r="10" fill="#f38ba8"/>
+  <circle cx="78" cy="42" r="10" fill="#f9e2af"/>
+  <circle cx="106" cy="42" r="10" fill="#a6e3a1"/>
+  
+  <!-- Terminal window -->
+  <rect x="80" y="90" width="380" height="180" rx="10" fill="#11111b" stroke="#45475a" stroke-width="2"/>
+  <text x="105" y="130" font-family="Consolas, monospace" font-size="16" fill="#cdd6f4">C:\Users\you&gt; </text>
+  <text x="244" y="130" font-family="Consolas, monospace" font-size="16" fill="#a6e3a1">"C:\Users\you\AppData\Local\Temp\clip-20260730-012930.png"</text>
+  
+  <text x="105" y="165" font-family="Consolas, monospace" font-size="16" fill="#cdd6f4">C:\Users\you&gt; </text>
+  <text x="244" y="165" font-family="Consolas, monospace" font-size="16" fill="#89b4fa">analyze screenshot</text>
+  
+  <rect x="244" y="170" width="18" height="3" fill="#cdd6f4"/>
+  
+  <!-- Image icon -->
+  <rect x="620" y="110" width="140" height="120" rx="12" fill="#313244" stroke="#89b4fa" stroke-width="3"/>
+  <circle cx="690" cy="155" r="18" fill="#f9e2af"/>
+  <polygon points="640,230 675,185 705,210 725,190 760,230" fill="#a6e3a1"/>
+  
+  <!-- Arrow -->
+  <path d="M 520 170 L 580 170" stroke="url(#accent)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <polygon points="580,170 565,160 565,180" fill="url(#accent)"/>
+  
+  <!-- Title -->
+  <text x="820" y="160" font-family="Segoe UI, system-ui, sans-serif" font-size="48" font-weight="700" fill="#cdd6f4">screenshot-snippets</text>
+  <text x="820" y="205" font-family="Segoe UI, system-ui, sans-serif" font-size="22" fill="#a6adc8">Paste screenshots into PowerShell &amp; CMD</text>
+  <text x="820" y="240" font-family="Segoe UI, system-ui, sans-serif" font-size="18" fill="#6c7086">Windows • Pure PowerShell • No API keys</text>
+</svg>

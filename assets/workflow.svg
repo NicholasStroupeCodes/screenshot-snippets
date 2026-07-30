@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 280">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#313244"/>
+      <stop offset="100%" stop-color="#1e1e2e"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#89b4fa"/>
+    </marker>
+  </defs>
+  
+  <rect width="1100" height="280" rx="16" fill="#11111b"/>
+  
+  <!-- Step 1: Snip -->
+  <rect x="60" y="70" width="180" height="140" rx="12" fill="url(#boxGrad)" stroke="#45475a" stroke-width="2"/>
+  <text x="150" y="115" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="42" fill="#f9e2af">✂️</text>
+  <text x="150" y="155" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="18" font-weight="600" fill="#cdd6f4">1. Snip</text>
+  <text x="150" y="182" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="14" fill="#a6adc8">Win + Shift + S</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="250" y1="140" x2="310" y2="140" stroke="#89b4fa" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2: Switch -->
+  <rect x="330" y="70" width="180" height="140" rx="12" fill="url(#boxGrad)" stroke="#45475a" stroke-width="2"/>
+  <text x="420" y="115" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="42" fill="#89b4fa">🖥️</text>
+  <text x="420" y="155" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="18" font-weight="600" fill="#cdd6f4">2. Switch</text>
+  <text x="420" y="182" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="14" fill="#a6adc8">PowerShell or CMD</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="520" y1="140" x2="580" y2="140" stroke="#89b4fa" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- Step 3: Paste -->
+  <rect x="600" y="70" width="180" height="140" rx="12" fill="url(#boxGrad)" stroke="#45475a" stroke-width="2"/>
+  <text x="690" y="115" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="42" fill="#a6e3a1">⌨️</text>
+  <text x="690" y="155" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="18" font-weight="600" fill="#cdd6f4">3. Paste</text>
+  <text x="690" y="182" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="14" fill="#a6adc8">Ctrl + V</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="790" y1="140" x2="850" y2="140" stroke="#89b4fa" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- Step 4: Use -->
+  <rect x="870" y="70" width="180" height="140" rx="12" fill="url(#boxGrad)" stroke="#45475a" stroke-width="2"/>
+  <text x="960" y="115" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="42" fill="#b4befe">🚀</text>
+  <text x="960" y="155" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="18" font-weight="600" fill="#cdd6f4">4. Use</text>
+  <text x="960" y="182" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="14" fill="#a6adc8">Path is ready</text>
+</svg>
