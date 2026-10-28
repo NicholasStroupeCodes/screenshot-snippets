@@ -21,9 +21,10 @@ image paste — only text. This tiny PowerShell utility bridges that gap:
 1. A background watcher polls the clipboard.
 2. When an image appears **and** the foreground window is a terminal, it:
    - Saves the image to a PNG file in your configured output directory.
-   - Replaces the clipboard image with the quoted file path as text.
+   - Adds the quoted file path to the clipboard as text, next to the image.
 3. Press `Ctrl+V` in the terminal → the path appears. Press Enter and your
-   CLI can read the image.
+   CLI can read the image. CLIs that read the clipboard image themselves
+   (Codex) still find the image, because it is never removed.
 
 If the foreground window is **not** a terminal (browser, Slack, Discord,
 Cursor chat, etc.), the image is left alone so normal image paste keeps working.
@@ -86,8 +87,10 @@ Add `-DeleteCaptures` to also remove saved PNGs from your temp folder.
 ## How it works
 
 - `screenshot-snippets.ps1` is the watcher. It P/Invokes `user32.dll` to detect
-  the foreground window, polls the clipboard, and swaps images for paths only
-  when the active window is a known terminal.
+  the foreground window and the clipboard sequence number, opens the clipboard
+  only when its contents change, and adds the saved file's path next to the
+  image only when the active window is a known terminal. A named mutex keeps it
+  to one running copy per login.
 - `install.ps1` copies the watcher to a stable location under your user profile,
   generates a hidden VBS launcher, and registers it in your Startup folder.
 - `uninstall.ps1` kills the watcher and removes the installed files.
